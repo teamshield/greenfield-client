@@ -1,0 +1,61 @@
+{
+  "name": "project-greenfield",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.0",
+  "description": "A complete redesign of a client-facing retail web-portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "webpack -d",
+    "build:watch": "npm run build -- --watch",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "dev": "concurrently \"npm start\" \"npm run build:watch\"",
+    "production": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrnyc23-vibranium/project-greenfield.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrnyc23-vibranium/project-greenfield/issues"
+  },
+  "homepage": "https://github.com/hrnyc23-vibranium/project-greenfield#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/lab": "^4.0.0-alpha.20",
+    "axios": "^0.19.0",
+    "clsx": "^1.0.4",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "filestack-js": "^3.4.2",
+    "html-react-parser": "^0.9.1",
+    "nodemon": "^1.19.1",
+    "puppeteer": "^1.18.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
